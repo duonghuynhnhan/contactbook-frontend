@@ -27,7 +27,6 @@ export default {
             try {
                 await contactService.create(contact);
                 this.message = 'Liên hệ được thêm thành công.';
-                this.contact = { name: '', email: '', address: '', phone: '', favorite: '', };
             } catch (error) {
                 console.log(error);
             }
