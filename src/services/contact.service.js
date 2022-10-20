@@ -36,6 +36,10 @@ class ContactService {
     async delete(id) {
         return (await this.api.delete(`${this.baseUrl}/${id}`)).data;
     }
+
+    async f() {
+        
+    }
 }
 
 export const contactService = new ContactService();
